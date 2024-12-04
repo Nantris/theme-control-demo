@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Alert, StyleSheet, Text, View } from 'react-native';
+import { setThemePreference } from '@vonovak/react-native-theme-control'
+
+setThemePreference('dark')
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
+      <Button text="Create alert" onPress={() => Alert.alert('Hello world')} />
       <StatusBar style="auto" />
     </View>
   );
