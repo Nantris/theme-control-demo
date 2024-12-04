@@ -19,13 +19,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.themecontrol.demo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "@vonovak/react-native-theme-control",
-    ]
+      "@vonovak/react-native-theme-control"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0467248f-70eb-4ec0-adc4-2b171e256b5c"
+      }
+    }
   }
 }
